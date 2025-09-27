@@ -148,7 +148,7 @@ def show_visualizations(df):
             freq_counts = df['Hizmet Sıklığı'].value_counts()
             fig = px.bar(x=freq_counts.index, y=freq_counts.values,
                         labels={'x': get_text('frequency'), 'y': get_text('count')})
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
 
     with col2:
         st.subheader(get_text('monthly_creation'))
@@ -156,7 +156,7 @@ def show_visualizations(df):
             monthly_data = df.groupby(df['Oluşturma Tarihi'].dt.to_period('M')).size()
             fig = px.line(x=monthly_data.index.astype(str), y=monthly_data.values,
                          labels={'x': get_text('month'), 'y': get_text('scope_count')})
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
 
     # Zaman serisi
     if 'Oluşturma Tarihi' in df.columns:
@@ -167,7 +167,7 @@ def show_visualizations(df):
         fig = px.scatter(daily_data, x=get_text('date'), y=get_text('count'),
                         trendline="rolling", trendline_options=dict(window=3),
                         labels={get_text('date'): get_text('date'), get_text('count'): get_text('daily_scope')})
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
 
 # En popüler hizmetler
 def show_popular_services(df):
@@ -195,13 +195,13 @@ def show_popular_services(df):
 
             with col1:
                 services_df = pd.DataFrame(sorted_services[:10], columns=[get_text('service'), get_text('demand_count')])
-                st.dataframe(services_df, use_container_width=True)
+                st.dataframe(services_df, width='stretch')
 
             with col2:
                 top_5 = dict(sorted_services[:5])
                 fig = px.pie(values=list(top_5.values()), names=list(top_5.keys()),
                            title=get_text('top_5_services'))
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
 
 # Veri tablosu
 def show_data_table(df):
@@ -241,7 +241,7 @@ def show_data_table(df):
     available_columns = [col for col in display_columns if col in filtered_df.columns]
     
     if available_columns:
-        st.dataframe(filtered_df[available_columns], use_container_width=True)
+        st.dataframe(filtered_df[available_columns], width='stretch')
     
     # CSV indirme
     col1, col2, col3 = st.columns(3)
