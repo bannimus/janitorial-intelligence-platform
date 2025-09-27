@@ -68,11 +68,6 @@ LANGUAGES = {
         'open_new_tab_dashboard': '💡 Dashboard için tarayıcıda yeni sekme açın:'
     },
     'en': {
-        'data_analysis': '📊 Data Analysis',
-        'show_dataset': 'Show Dataset',
-        'open_new_tab_dashboard': '💡 Open new tab in browser for Dashboard:'
-    }
-    'en': {
         'title': '🏢 Janitorial Service Intelligence Platform',
         'subtitle': 'Cleaning Service Scope Creation Form',
         'customer_info': '👤 Customer Information',
@@ -130,7 +125,10 @@ LANGUAGES = {
         'email_placeholder': 'example@email.com',
         'phone_placeholder': '555 555 55 55',
         'address_placeholder': 'Enter full address',
-        'requirements_placeholder': 'Special cleaning requirements, points to consider...'
+        'requirements_placeholder': 'Special cleaning requirements, points to consider...',
+        'open_new_tab_dashboard': '💡 Open new tab in browser for Dashboard:',
+        'data_analysis': '📊 Data Analysis',
+        'show_dataset': 'Show Dataset'
     }
 }
 
