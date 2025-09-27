@@ -142,9 +142,8 @@ janitorial-intelligence-platform/
 ## 🤝 **Support & Contact**
 
 ### **Support Channels**
-- 📧 **Email**: support@bannimus.com
+- 📧 **Email**: bannimus@gmail.com
 - 💬 **Live Chat**: Available 24/7 on our website
-- 📞 **Phone**: [Contact number]
 - 📋 **Ticket**: Through our support portal
 
 ### **SLA Guarantees**
@@ -187,9 +186,7 @@ janitorial-intelligence-platform/
 **BanniMus** is a professional software development company founded in 2024. We provide digital solutions specialized for the cleaning industry.
 
 **🏢 Address**: [Company address]
-**🌐 Website**: [www.bannimus.com]
-**📧 Email**: info@bannimus.com
-**📞 Phone**: [Contact number]
+**📧 Email**: bannimus@gmail.com
 
 ---
 
