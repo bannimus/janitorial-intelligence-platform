@@ -67,7 +67,7 @@ LANGUAGES = {
         'show_dataset': 'Veri Setini Göster',
         'open_new_tab_dashboard': '💡 Dashboard için tarayıcıda yeni sekme açın:'
     },
-    'tr': {
+    'en': {
         'title': '🏢 Janitorial Service Intelligence Platform',
         'subtitle': 'Cleaning Service Scope Creation Form',
         'customer_info': '👤 Customer Information',
