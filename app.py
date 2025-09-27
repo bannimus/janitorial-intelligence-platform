@@ -476,6 +476,10 @@ if submitted:
                 # PDF oluştur
                 doc.build(content)
                 buffer.seek(0)
+
+                # Debug bilgisi
+                pdf_size = len(buffer.getvalue())
+                print(f"PDF oluşturuldu, boyut: {pdf_size} bytes")
                 
                 # İndirme butonu
                 st.download_button(
