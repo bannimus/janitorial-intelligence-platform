@@ -68,6 +68,9 @@ deploy/
 dist/
 build/
 
+# Project specific - docs folder for internal use only
+docs/
+
 # Secrets
 secrets.toml
 config.toml

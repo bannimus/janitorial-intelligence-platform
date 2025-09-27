@@ -1,144 +1,197 @@
 # 🏢 Janitorial Service Intelligence Platform
 
-Profesyonel temizlik şirketleri için kapsam (scope) oluşturma ve veri analizi platformu.
+**Intelligent Scope Creation and Data Analytics Platform for Professional Cleaning Companies**
 
-## 🚀 Özellikler
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-red.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)]()
 
-### ✨ Ana Özellikler
-- **Kapsam Oluşturma**: Detaylı temizlik kapsamları oluşturun
-- **Veri Kaydetme**: Tüm kapsamları CSV formatında saklayın
-- **Analitik Dashboard**: Verilerinizi görsel olarak analiz edin
-- **PDF Rapor**: Profesyonel PDF raporlar oluşturun
-- **Çoklu Sayfa**: Ana sayfa ve dashboard arasında geçiş
+---
 
-### 📋 Temizlik Alanları
-- 🏢 **Resepsiyon**: Zemin, toz alma, cam, masa temizliği
-- 💼 **Ofis Alanları**: Çalışma alanları ve mobilyalar
-- 🍽️ **Mutfak**: Tezgah, cihazlar, buzdolabı temizliği
-- 🚻 **Tuvaletler**: Hijyenik temizlik ve dezenfeksiyon
+## ⚠️ **PROPRIETARY SOFTWARE NOTICE**
 
-### 📊 Dashboard Özellikleri
-- Veri metrikleri ve KPI'lar
-- İnteraktif grafikler (Plotly)
-- Zaman serisi analizi
-- Popüler hizmetler analizi
-- Veri filtreleme ve dışa aktarma
+**This software is protected by copyright.**
+- © 2024 BanniMus. All rights reserved.
+- License required for commercial use.
+- Copying, modifying, or distributing source code is prohibited.
+- Unauthorized use may result in legal action.
 
-## 🛠️ Kurulum
+---
 
-### Gereksinimler
-- Python 3.8+
-- pip
+## 🚀 **Features**
 
-### Adım Adım Kurulum
+### ✨ **Core Features**
+- **🔐 Secure Scope Creation**: Multi-language support for detailed cleaning scopes
+- **📊 Intelligent Data Analytics**: Real-time dashboard and reporting
+- **📄 Professional PDF Reports**: Automated reports for client presentations
+- **🌐 Multi-Language Support**: Turkish and English interface
+- **☁️ Cloud Compatible**: Instant deployment with Streamlit Cloud
 
-1. **Sanal ortam oluşturun:**
+### 🏢 **Cleaning Areas**
+| Area | Number of Tasks | Supported Frequencies |
+|------|----------------|---------------------|
+| **Reception** | 8 tasks | Daily/Weekly/Monthly |
+| **Office Areas** | 8 tasks | Daily/Weekly/Monthly |
+| **Kitchen** | 9 tasks | Daily/Weekly/Monthly |
+| **Toilets** | 8 tasks | Daily/Weekly/Monthly |
+
+### 📊 **Dashboard Features**
+- **KPI Metrics**: Total scopes, growth rates
+- **Interactive Charts**: Dynamic visualizations with Plotly
+- **Time Series**: Activity trend analysis
+- **Service Analysis**: Most popular cleaning types
+- **Data Export**: CSV and PDF export
+
+## 💰 **Licensing**
+
+### **Pricing Plans**
+| Package | Monthly | Annual | Features |
+|---------|---------|--------|----------|
+| **Starter** | $29 | $290 | Basic scope creation, 100 customers |
+| **Professional** | $79 | $790 | Advanced analytics, unlimited customers, PDF reports |
+| **Enterprise** | $199 | $1,990 | Multi-user, API access, custom domain |
+
+### **Feature Comparison**
+- ✅ **Starter**: Scope creation, basic dashboard
+- ✅ **Professional**: Advanced analytics, PDF reports, priority support
+- ✅ **Enterprise**: Multi-user, custom developments, SLA guarantee
+
+## 🛠️ **Technical Requirements**
+
+### **Minimum System Requirements**
+- **Python**: 3.8 or higher
+- **RAM**: 2 GB
+- **Disk**: 500 MB free space
+- **Browser**: Chrome 90+, Firefox 88+, Safari 14+
+
+### **Supported Platforms**
+- ✅ Windows 10/11
+- ✅ macOS 10.15+
+- ✅ Linux (Ubuntu 20.04+)
+- ✅ Cloud (AWS, Google Cloud, Azure)
+
+## 📋 **Quick Start**
+
+### **Live Demo**
+🌐 **[View Live Demo](https://bannimus-janitorial-intelligence-platform.streamlit.app)**
+
+### **Local Installation**
 ```bash
+# 1. Clone the repository
+git clone https://github.com/bannimus/janitorial-intelligence-platform.git
+cd janitorial-intelligence-platform
+
+# 2. Create virtual environment
 python -m venv venv
-```
-
-2. **Sanal ortamı aktifleştirin:**
-```bash
 # Windows
 venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
-```
 
-3. **Gerekli paketleri yükleyin:**
-```bash
-pip install streamlit pandas plotly reportlab python-docx
-```
+# 3. Install dependencies
+pip install -r requirements.txt
 
-4. **Uygulamayı çalıştırın:**
-```bash
+# 4. Run the application
 streamlit run app.py
 ```
 
-## 🎯 Kullanım
+## 🎯 **User Guide**
 
-### Kapsam Oluşturma
-1. Ana sayfada müşteri bilgilerini doldurun
-2. Temizlik alanlarını ve sıklıklarını seçin
-3. "Kapsamı Oluştur ve Kaydet" butonuna tıklayın
-4. PDF rapor oluşturmak için ilgili butona tıklayın
+### **1. Creating Scopes**
+1. **Enter customer information** (name, company, contact)
+2. **Select service date** and **frequency**
+3. **Expand cleaning areas** and select tasks
+4. **Click "Create Scope"** button
+5. **Download PDF report**
 
-### Dashboard Analizi
-1. Sidebar'dan "Dashboard" sayfasına geçin
-2. Veri metriklerini inceleyin
-3. Grafikleri ve analizleri görüntüleyin
-4. Verileri filtreleyin ve CSV olarak dışa aktarın
+### **2. Dashboard Analysis**
+1. **Navigate to Dashboard** from sidebar
+2. **Review metrics**
+3. **Analyze charts**
+4. **Filter and export data**
 
-## 📁 Proje Yapısı
+## 📁 **Proje Yapısı**
 
 ```
-janitorial-service-intelligence/
+janitorial-intelligence-platform/
 │
-├── app.py                 # Ana sayfa - Kapsam oluşturma
-├── pages/
-│   └── dashboard.py       # Analitik dashboard
-├── cleaning_scopes.csv    # Kapsam verileri (otomatik oluşturulur)
-├── README.md             # Bu dosya
-└── docs/                 # Proje dokümantasyonları
-    ├── proje_baslangic_bilgisi.txt
-    ├── yol_haritasi.md
-    └── Scope Builder.docx
+├── 📄 app.py                  # Ana uygulama (kapsam oluşturma)
+├── 📁 pages/
+│   └── 📄 dashboard.py        # Analitik dashboard
+├── 📄 requirements.txt        # Python bağımlılıkları
+├── 📄 Procfile               # Heroku deployment
+├── 📄 .gitignore            # Gizli dosyalar
+└── 📄 README.md             # Bu dokümantasyon
 ```
 
-## 🔧 Yapılandırma
+## 🔧 **API Referansı**
 
-### Veri Saklama
-- Kapsam verileri `cleaning_scopes.csv` dosyasında saklanır
-- Her yeni kapsam mevcut verilere eklenir
-- Dashboard bu dosyadan verileri okur
-
-### PDF Raporlar
-- Detaylı müşteri ve hizmet bilgileri
-- Seçilen temizlik görevleri
-- Özel gereksinimler
-- Profesyonel format
-
-## 🎨 Özelleştirme
-
-### Yeni Temizlik Alanları Eklemek
-`app.py` dosyasında ilgili bölümlere yeni alanlar ekleyebilirsiniz:
-
-```python
-# Yeni alan örneği
-with st.expander("🏢 Yeni Alan"):
-    yeni_gorev = st.selectbox("Görev", ["Dahil Değil", "Günlük", "Haftalık"], key="yeni_gorev")
+### **Veri Formatları**
+```json
+{
+  "customer_name": "string",
+  "company_name": "string",
+  "service_frequency": "Daily|Weekly|Monthly",
+  "cleaning_areas": {
+    "reception": ["floor_cleaning", "dust_cleaning"],
+    "office": ["vacuum_cleaning", "desk_cleaning"]
+  }
+}
 ```
 
-### Dashboard Metrikleri
-`pages/dashboard.py` dosyasında yeni metrikler ekleyebilirsiniz.
+## 🤝 **Support & Contact**
 
-## 🚀 Geliştirme
+### **Support Channels**
+- 📧 **Email**: support@bannimus.com
+- 💬 **Live Chat**: Available 24/7 on our website
+- 📞 **Phone**: [Contact number]
+- 📋 **Ticket**: Through our support portal
 
-### Katkıda Bulunma
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Commit yapın (`git commit -m 'Add amazing feature'`)
-4. Push yapın (`git push origin feature/amazing-feature`)
-5. Pull Request açın
+### **SLA Guarantees**
+| Package | Response Time | Resolution Time |
+|---------|---------------|-----------------|
+| **Starter** | 24 hours | 72 hours |
+| **Professional** | 4 hours | 24 hours |
+| **Enterprise** | 1 hour | 8 hours |
 
-## 📝 Lisans
+## 📊 **Version History**
 
-Bu proje öğrenme ve geliştirme amaçlı oluşturulmuştur.
+| Version | Date | Key Changes |
+|---------|------|-------------|
+| **v1.0.0** | 2024 | First commercial release |
+| **v1.1.0** | Planned | Advanced analytics features |
+| **v1.2.0** | Planned | Mobile application |
 
-## 🤝 Destek
+## ⚖️ **Legal Disclaimers**
 
-Herhangi bir sorun yaşarsanız:
-- GitHub Issues sayfasını kullanın
-- E-posta gönderin
+### **Terms of Use**
+1. This software may only be used by licensed users
+2. Examining, copying, or modifying source code is prohibited
+3. Cannot be transferred to third parties
+4. Data privacy and security standards must be followed
 
-## 📊 Sürüm Geçmişi
+### **Disclaimer**
+- Software is provided "as is"
+- No liability for indirect damages
+- User data security is user's responsibility
 
-### v1.0.0
-- İlk sürüm
-- Temel kapsam oluşturma
-- Dashboard analizi
-- PDF raporlama
+### **Violation Policy**
+- 🚫 **Warning**: Written warning for first violation
+- 🚫 **License Termination**: For repeated violations
+- ⚖️ **Legal Action**: In case of commercial loss
 
 ---
 
-**Janitorial Service Intelligence Platform** - Profesyonel temizlik yönetimi için akıllı çözüm 🏢✨
+## 🏆 **About BanniMus**
+
+**BanniMus** is a professional software development company founded in 2024. We provide digital solutions specialized for the cleaning industry.
+
+**🏢 Address**: [Company address]
+**🌐 Website**: [www.bannimus.com]
+**📧 Email**: info@bannimus.com
+**📞 Phone**: [Contact number]
+
+---
+
+**🔒 © 2024 BanniMus. All rights reserved.**
+**⚖️ This software is protected by copyright and trade secrets.**
