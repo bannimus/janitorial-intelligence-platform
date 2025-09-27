@@ -62,9 +62,12 @@ LANGUAGES = {
         'email_placeholder': 'ornek@email.com',
         'phone_placeholder': '0555 555 55 55',
         'address_placeholder': 'Tam adres bilgisini girin',
-        'requirements_placeholder': 'Özel temizlik gereksinimleri, dikkat edilmesi gereken noktalar...'
+        'requirements_placeholder': 'Special cleaning requirements, points to consider...',
+        'data_analysis': '📊 Veri Analizi',
+        'show_dataset': 'Veri Setini Göster',
+        'open_new_tab_dashboard': '💡 Dashboard için tarayıcıda yeni sekme açın:'
     },
-    'en': {
+    'tr': {
         'title': '🏢 Janitorial Service Intelligence Platform',
         'subtitle': 'Cleaning Service Scope Creation Form',
         'customer_info': '👤 Customer Information',
@@ -152,12 +155,12 @@ st.title(get_text('title'))
 st.subheader(get_text('subtitle'))
 
 # Sidebar navigasyon
-st.sidebar.title(get_text('sidebar_title'))
+st.sidebar.title(get_text('navigation'))
 st.sidebar.write(f"**{get_text('main_page')}")
 st.sidebar.write(f"**{get_text('dashboard_page')}")
 
 # Sidebar navigasyon - Dashboard butonu için bilgi
-st.sidebar.write("💡 Dashboard için tarayıcıda yeni sekme açın:")
+st.sidebar.write(get_text('open_new_tab_dashboard'))
 st.sidebar.write("http://localhost:8502/dashboard")
 
 # Müşteri bilgileri bölümü
@@ -486,8 +489,8 @@ if submitted:
                 st.error(f"❌ PDF oluşturulurken hata: {str(e)}")
 
 # Sidebar - Veri analizi
-st.sidebar.header("📊 Veri Analizi")
-if st.sidebar.button("Veri Setini Göster"):
+st.sidebar.header(get_text('data_analysis'))
+if st.sidebar.button(get_text('show_dataset')):
     try:
         df = pd.read_csv("cleaning_scopes.csv")
         st.sidebar.write(f"Toplam Kayıt: {len(df)}")
