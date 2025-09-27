@@ -44,12 +44,12 @@
 
 ## 💰 **Licensing**
 
-### **Pricing Plans**
-| Package | Monthly | Annual | Features |
-|---------|---------|--------|----------|
-| **Starter** | $29 | $290 | Basic scope creation, 100 customers |
-| **Professional** | $79 | $790 | Advanced analytics, unlimited customers, PDF reports |
-| **Enterprise** | $199 | $1,990 | Multi-user, API access, custom domain |
+### **Available Packages**
+| Package | Features |
+|---------|----------|
+| **Starter** | Basic scope creation, standard support |
+| **Professional** | Advanced analytics, PDF reports, priority support |
+| **Enterprise** | Multi-user access, custom developments, SLA guarantee |
 
 ### **Feature Comparison**
 - ✅ **Starter**: Scope creation, basic dashboard
@@ -150,9 +150,9 @@ janitorial-intelligence-platform/
 ### **SLA Guarantees**
 | Package | Response Time | Resolution Time |
 |---------|---------------|-----------------|
-| **Starter** | 24 hours | 72 hours |
-| **Professional** | 4 hours | 24 hours |
-| **Enterprise** | 1 hour | 8 hours |
+| **Starter** | Standard | Standard |
+| **Professional** | Priority | Priority |
+| **Enterprise** | Immediate | Guaranteed |
 
 ## 📊 **Version History**
 
