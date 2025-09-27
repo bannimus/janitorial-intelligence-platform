@@ -68,6 +68,11 @@ LANGUAGES = {
         'open_new_tab_dashboard': '💡 Dashboard için tarayıcıda yeni sekme açın:'
     },
     'en': {
+        'data_analysis': '📊 Data Analysis',
+        'show_dataset': 'Show Dataset',
+        'open_new_tab_dashboard': '💡 Open new tab in browser for Dashboard:'
+    }
+    'en': {
         'title': '🏢 Janitorial Service Intelligence Platform',
         'subtitle': 'Cleaning Service Scope Creation Form',
         'customer_info': '👤 Customer Information',
